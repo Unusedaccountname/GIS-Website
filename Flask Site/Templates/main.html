@@ -7,27 +7,32 @@
 	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
 	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
-<header>
+<header background-image:>
 	<div class="dropdown">
 	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 	    Dropdown
 	    <span class="caret"></span>
 	  </button>
 	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-	    <li><a href="#">Who we Are</a></li>
-	    <li><a href="#">What we Do</a></li>
+	    <li><a href="/about.html/">Who we Are</a></li>
+	    <li><a href="/projects.html/">What we Do</a></li>
 	    <li><a href="http://www.esri.com/what-is-gis">What is GIS?</a></li>
-			<li><a href="https://opensource.com/resources/what-open-source">What is Open Source?</a></li>
+		<li><a href="https://opensource.com/resources/what-open-source">What is Open Source?</a></li>
 	    <li role="separator" class="divider"></li>
-	    <li><a href="#">Blog</a></li>
-			<li role="separator" class="divider"></li>
-			<li><a href="#">Source</a></li>
-			<li role="separator" class="divider"></li>
-			<li><a href="#">Store</a></li>
+	    <li><a href="/store.html/">Store</a></li>
+		<li role="separator" class="divider"></li>
+		<li><a href="/donate.html/">Donate</a></li>
+		<li role="separator" class="divider"></li>
+		<li><a href="/blog.html/">Blog</a></li>
+		<li role="separator" class="divider"></li>
+		<li><a href="https://github.com/TFullerene/GIS-Website">Source</a></li>
 	  </ul>
 	</div>
 </header>
 <body>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
